@@ -1,0 +1,107 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    color: orange;
+    text-shadow: 1px 1px  5px rgba(0,0,0,.1);
+    margin: 1em auto .5em;
+    border-bottom: 1px solid orange;
+    max-width: 300px;
+}
+
+.calculator {
+    width: 400px;
+    height: 330px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: .5em 1em;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.calculator input[type="text"] {
+    width: 100%;
+    font-size: 30px;
+    text-align: right;
+    padding: .4em 3% .4em 0;
+    font-weight: 300;
+    color: rgba(0,0,0,0.3);
+    margin: .5em 0;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: none;
+    -webkit-transition: border-color .3s;
+    -o-transition: border-color .3s;
+    -moz-transition: border-color .3s;
+    transition: border-color .3s;
+}
+
+.calculator input[type="text"]:focus { border-color: rgba(0,0,0,0.4); }
+
+.keyboard span {
+    float: left;
+    width: 95px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.2);
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 4px 4px 0; 
+    border-radius: 2px;
+    -webkit-transition: border-color .3s;
+    -o-transition: border-color .3s;
+    -moz-transition: border-color .3s;
+    transition: border-color .3s;
+}
+
+.keyboard span:not(:last-child):hover {
+    border-color: rgba(0,0,0,0.4);
+}
+
+.keyboard span:nth-child(4n) { margin: 0 0 0 0; }
+
+.keyboard span:last-child {
+    width: 195px;
+    margin-right: 0;
+    background-color: #149dd2;
+}
+
+.keyboard span:last-child:hover { opacity: .9; }
+
+.percent { background: url(icons/percent.png) no-repeat center center; }
+
+.plus { background: url(icons/plus.png) no-repeat center center; }
+
+.minus { background: url(icons/minus.png) no-repeat center center; }
+
+.divide { background: url(icons/divide.png) no-repeat center center; }
+
+.equal { background: url(icons/equal.png) no-repeat center center; }
+
+span.percent, 
+span.plus,
+span.minus,
+span.multiply,
+span.divide,
+span.equal {
+    background-color: #f1f1f1;
+    border: 1px solid rgba(0,0,0,0.15);
+}
+
+span.ac, span.ce { color: #888888; }
+
+.icon { background-size: 15px; }
+
+.multiply { background: url(icons/multiply.png) no-repeat center center; background-size: 12px; }
