@@ -6,30 +6,41 @@
         <link rel="stylesheet" href="assets/styles.css" />
     </head>
     <body>
-        <h1 class="title">Calculator</h1>
         <div class="calculator">
-            <input type="text" value="0">
+            <h4 class="title">Calculator</h4>
+            <input type="text" id="input-calc" placeholder="0">
             <div class="keyboard">
-                <span class="icon ac" data-btn="on-ac">ON/AC</span>
-                <span class="icon ce" data-btn="ce">CE</span>
-                <span class="icon percent" data-btn="percent"></span>
-                <span class="icon plus" data-btn="plus"></span>
-                <span data-btn="1">1</span>
-                <span data-btn="2">2</span>
-                <span data-btn="3">3</span>
-                <span class="icon minus" data-btn="minus"></span>
-                <span data-btn="4">4</span>
-                <span data-btn="5">5</span>
-                <span data-btn="6">6</span>
-                <span class="icon multiply" data-btn="multiply"></span>
-                <span data-btn="7">7</span>
-                <span data-btn="8">8</span>
-                <span data-btn="9">9</span>
-                <span class="icon divide" data-btn="divide"></span>
-                <span data-btn="0">0</span>
-                <span data-btn="dot">.</span>
-                <span class="icon equal" data-btn="equal"></span>
+                <span class="icon ac" data-value="on-ac" data-type="action">ON/AC</span>
+                <span class="icon ce" data-value="ce" data-type="action">CE</span>
+                <span class="icon percent" data-value="perc" data-type="action"></span>
+                
+                <span class="icon plus" data-value="sum" data-type="action"></span>
+                
+                <span data-value="1" data-type="num">1</span>
+                <span data-value="2" data-type="num">2</span>
+                <span data-value="3" data-type="num">3</span>
+                
+                <span class="icon minus" data-value="subt" data-type="action"></span>
+                
+                <span data-value="4" data-type="num">4</span>
+                <span data-value="5" data-type="num">5</span>
+                <span data-value="6" data-type="num">6</span>
+                
+                <span class="icon multiply" data-value="mult" data-type="action"></span>
+
+                <span data-value="7" data-type="num">7</span>
+                <span data-value="8" data-type="num">8</span>
+                <span data-value="9" data-type="num">9</span>
+                
+                <span class="icon divide" data-value="divide" data-type="action"></span>
+                
+                <span data-value="0" data-type="num">0</span>
+                <span data-value="." data-type="dot">.</span>
+                <span class="icon equal" data-value="equal" data-type="action"></span>
             </div>
         </div>
+        
+        <script src="assets/js/Calculator.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>

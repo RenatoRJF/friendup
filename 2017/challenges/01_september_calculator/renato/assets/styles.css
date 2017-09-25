@@ -10,21 +10,16 @@ body {
 
 .title {
     font-weight: 300;
-    font-size: 3em;
-    text-align: center;
+    font-size: 25px;
     color: orange;
-    text-shadow: 1px 1px  5px rgba(0,0,0,.1);
-    margin: 1em auto .5em;
-    border-bottom: 1px solid orange;
-    max-width: 300px;
+    text-shadow: 1px 2px  5px rgba(0,0,0,.1);
 }
 
 .calculator {
     width: 400px;
-    height: 330px;
-    margin: 0 auto;
+    margin: 10% auto 0;
     background-color: #fff;
-    padding: .5em 1em;
+    padding: .5em 1em 1em;
     border: 1px solid rgba(0,0,0,.2);
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     border-radius: 5px;
@@ -36,7 +31,7 @@ body {
     text-align: right;
     padding: .4em 3% .4em 0;
     font-weight: 300;
-    color: rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
     margin: .5em 0;
     border-radius: 2px;
     border: 1px solid rgba(0,0,0,.2);
@@ -48,6 +43,26 @@ body {
 }
 
 .calculator input[type="text"]:focus { border-color: rgba(0,0,0,0.4); }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(0,0,0,0.3);
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(0,0,0,0.3);
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(0,0,0,0.3);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: rgba(0,0,0,0.3);
+}
+
+.keyboard {
+    height: 226px;
+}
 
 .keyboard span {
     float: left;
